@@ -1,0 +1,20 @@
+.drum {
+  display: inline-block;
+  padding: 60px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(to bottom, #ffc578 0%,#fb9d23 100%);
+  box-shadow: 0 2px 10px grey;
+  border-bottom: 7px solid black;
+  border-right: 7px solid black;
+  transition: 150ms ease;
+  &:active {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    box-shadow: 0 1px 5px grey;
+    background: linear-gradient(to bottom, #ffc578 0%,#dd1f1f 100%);
+  }
+  &:focus {
+    outline: none;
+  }
+}

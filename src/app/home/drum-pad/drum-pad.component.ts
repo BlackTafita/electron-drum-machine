@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-drum-pad',
@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DrumPadComponent implements OnInit {
 
-  soundsSrs = '../../../assets/audio/kick.wav';
+  @Input()
+  soundsSrs: string = '../../../assets/audio/kick.wav';
 
   audio: HTMLAudioElement;
 
@@ -17,7 +18,6 @@ export class DrumPadComponent implements OnInit {
   ngOnInit() {
     this.audio = new Audio();
     this.audio.src = this.soundsSrs;
-    console.log(this.audio);
   }
 
   click() {

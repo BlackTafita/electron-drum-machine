@@ -1,3 +1,4 @@
+  @import url('https://fonts.googleapis.com/css?family=Calligraffitti&display=swap');
 .machine {
   min-width: 600px;
   max-width: 960px;
@@ -6,6 +7,34 @@
   padding: 25px;
   border-bottom: 20px solid #656464;
   border-right: 5px solid;
+  box-shadow: 4px -4px 5px 3px;
+  .row {
+   margin-bottom: 10px;
+
+    .naming {
+      padding: 10px;
+      width: 200px;
+      border: 0px solid lighten(hsl(210, 50%, 90%), 2);
+      box-shadow:
+        3px 3px 8px 1px rgba(0, 0, 0, 1) inset,
+        -3px -3px 8px 1px rgba(247, 251, 255, 0.7) inset;
+      border-radius: 10px;
+      // Text
+      font-family: 'Calligraffitti', cursive;
+      text-shadow: 3px 2px 3px rgba(255,255,255,.2);
+      color: #333333;
+      text-align: center;
+
+      .title {
+        font-size: 2.4em;
+        font-weight: bold;
+        line-height: 1.4em;
+      }
+      .sub-title {
+
+      }
+    }
+  }
   .drums {
     display: flex;
     justify-content: space-between;

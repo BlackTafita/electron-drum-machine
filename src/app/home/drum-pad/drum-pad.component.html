@@ -1,6 +1,6 @@
 <button
   class="drum"
   (click)="click()"
-  (dblclick)="repeatToggle()"
   [ngClass]="{repeat: audio.loop}"
+  [disabled]="!soundsSrs"
 ></button>

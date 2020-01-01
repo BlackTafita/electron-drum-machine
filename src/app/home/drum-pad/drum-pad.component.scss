@@ -12,7 +12,17 @@
   transition: 150ms ease;
   &:active {
     border-bottom: 2px solid black;
+    margin-bottom: 15px;
+    margin-right: 15px;
     border-right: 2px solid black;
+    box-shadow: 0 1px 5px grey;
+    background: linear-gradient(to bottom, #ffc578 0%,#dd1f1f 100%);
+  }
+  &.active {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    margin-bottom: 15px;
+    margin-right: 15px;
     box-shadow: 0 1px 5px grey;
     background: linear-gradient(to bottom, #ffc578 0%,#dd1f1f 100%);
   }

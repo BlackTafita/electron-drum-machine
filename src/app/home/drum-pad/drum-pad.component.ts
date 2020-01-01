@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-drum-pad',
@@ -10,10 +10,31 @@ export class DrumPadComponent implements OnInit {
   @Input()
   soundsSrs: string;
 
+  @Input()
+  keyName: string;
+
   audio: HTMLAudioElement;
+  isActive: boolean = false;
 
   constructor() {
   }
+
+  @HostListener('document:keyup', ['$event'])
+  handleKeyboardKeyupEvent(event: KeyboardEvent) {
+    let x = event.key;
+    if (x === this.keyName) {
+      this.isActive = false;
+    }
+  }
+  @HostListener('document:keypress', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    let x = event.key;
+    if (x === this.keyName) {
+      this.isActive = true;
+      this.click();
+    }
+  }
+
 
   ngOnInit() {
     this.audio = new Audio();

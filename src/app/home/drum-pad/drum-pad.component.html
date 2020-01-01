@@ -1,6 +1,6 @@
 <button
   class="drum"
   (click)="click()"
-  [ngClass]="{repeat: audio.loop}"
+  [ngClass]="{repeat: audio.loop, active: isActive}"
   [disabled]="!soundsSrs"
 ></button>

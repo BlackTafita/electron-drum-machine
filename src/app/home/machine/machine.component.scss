@@ -1,8 +1,10 @@
 .machine {
+  min-width: 600px;
+  max-width: 960px;
   margin: 20px;
   background: linear-gradient(to bottom, #7d8590 0%,#828c95 36%,#28343b 100%);
   padding: 25px;
-  border-bottom: 20px solid darkgray;
+  border-bottom: 20px solid #656464;
   border-right: 5px solid;
   .drums {
     display: flex;

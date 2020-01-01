@@ -7,9 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DrumPadComponent implements OnInit {
 
-  constructor() { }
+  soundsSrs = '../../../assets/audio/kick.wav';
+
+  audio: HTMLAudioElement;
+
+  constructor() {
+  }
 
   ngOnInit() {
+    this.audio = new Audio();
+    this.audio.src = this.soundsSrs;
+    console.log(this.audio);
   }
+
+  click() {
+    this.audio.load();
+    this.audio.play();
+  }
+
+  repeatToggle() {
+    this.audio.loop = !this.audio.loop;
+    console.log(this.audio.loop);
+  }
+
 
 }

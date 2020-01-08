@@ -39,5 +39,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    border: 0px solid lighten(hsl(210, 50%, 90%), 2);
+    box-shadow:
+      3px 3px 8px 1px rgba(0, 0, 0, 1) inset,
+      -3px -3px 8px 1px rgba(247, 251, 255, 0.7) inset;
+    border-radius: 10px;
+    padding: 20px 10px 10px 20px;
   }
 }

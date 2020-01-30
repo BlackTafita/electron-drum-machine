@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MachineComponent implements OnInit {
 
+  active: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggle() {
+    this.active = !this.active;
   }
 
 }

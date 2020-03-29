@@ -53,8 +53,7 @@
           padding: 20px;
           border-radius: 5px;
           background-color: inherit;
-          //border: 2px solid;
-          border: 2px solid lighten(hsl(196, 7%, 32%), 2);
+          border: 1px solid lighten(hsl(196, 7%, 32%), 2);
           box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 1),
           -2px -2px 8px 1px rgba(247, 251, 255, 0.7);
           text-shadow: 3px 2px 3px rgba(255, 255, 255, .2);
@@ -65,13 +64,11 @@
           }
         }
         .active {
-          border: 2px solid lighten(hsl(2, 83%, 68%), 2);
+          border: 1px solid lighten(hsl(0, 88%, 55%), 2);
           box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 1),
           -2px -2px 8px 1px rgba(247, 251, 255, 0.7),
-          1px 1px 8px 1px rgb(250, 240, 245) inset,
-          -1px -1px 8px 1px rgba(133, 130, 133, 0.97) inset
-          3px 3px 8px 1px rgba(0, 0, 0, 1) inset,
-          -3px -3px 8px 1px rgba(247, 251, 255, 0.7) inset;
+          2px 2px 8px 1px rgba(241, 20, 23, 0.71) inset,
+          -2px -2px 8px 1px rgba(241, 20, 23, 0.7) inset;
           text-shadow: 1px 2px 2px lighten(hsl(2, 83%, 68%), 2);
           color: lighten(hsl(359, 89%, 51%), 2);
         }
